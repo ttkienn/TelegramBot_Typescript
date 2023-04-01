@@ -1,4 +1,4 @@
 export default {
-    TOKEN_BOT: "6211881198:AAGPf-bFnkpp0GvWCjamtf5TfQMxLaOGsAk",
+    TOKEN_BOT: "YOUR_TOKEN_BOT",
     PREFIX: "/"
 };
