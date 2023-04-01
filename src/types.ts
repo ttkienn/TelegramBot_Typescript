@@ -12,5 +12,5 @@ export interface HandleCommandArgs {
 export interface Command {
     name: string;
     description: string;
-    execute({ ctx, args }: { ctx: any; args: any[], utils: any }): Promise<void>;
+    execute({ ctx, args, utils }: { ctx: any; args: any[], utils: any }): Promise<void>;
 }
