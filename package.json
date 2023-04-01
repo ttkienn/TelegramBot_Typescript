@@ -1,0 +1,46 @@
+{
+  "name": "telegrambot",
+  "version": "1.0.0",
+  "description": "Tạo một bot telegram đơn giản với nodejs",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "tsup": {
+    "entry": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "splitting": false,
+    "sourcemap": false,
+    "clean": true,
+    "dts": true,
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "target": "es2017"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsup",
+    "start": "node dist/index.js"
+  },
+  "author": "Thiệu Trung Kiên",
+  "license": "MIT",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.3.4",
+    "chalk": "^4.1.2",
+    "colors": "^1.4.0",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7",
+    "telegraf": "^4.12.2",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1"
+  }
+}
